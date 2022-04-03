@@ -87,7 +87,7 @@ h4 {
 .navbar .navbar-brand .logo {
     height: 150px;
     width: 150px;
-    
+
 }
 
 .navbar .nav-item {
@@ -99,7 +99,7 @@ h4 {
     padding-right: 6px;
 }
 
-.navbar-nav > li:last-of-type { 
+.navbar-nav > li:last-of-type {
     border-right: none;
 }
 
@@ -109,7 +109,7 @@ h4 {
     font-size: 1.5em;
     font-weight: 600;
     z-index: 3;
-    background: no-repeat center/100% url("/Users/noble/Documents/Web Developer/Portfolio/Noblelivingco Website/images/stock/pink canvas.png");
+    background: no-repeat center/100% url("images/stock/pink canvas.png");
 }
 
 .label-icon {
@@ -131,8 +131,8 @@ h4 {
     height: 40em;
     display: flex;
     align-items: center;
-    justify-content: center;     
-    background: no-repeat center/100% url("/Users/noble/Documents/Web Developer/Portfolio/Noblelivingco Website/images/stock/Women_Laughing_Stock_1.jpg");
+    justify-content: center;
+    background: no-repeat center/100% url("images/stock/Women_Laughing_Stock_1.jpg");
     z-index: -1;
 }
 
@@ -174,7 +174,7 @@ h4 {
     background-color: black;
     height: 2px;
 }
-    
+
 #header-cta {
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ h4 {
 }
 
 #third-section-b h4 {
-    padding-top: 2rem; 
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
