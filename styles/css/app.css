@@ -42,21 +42,21 @@ blockquote {
 
 .product-img-circle {
     border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
 }
 
 .step-img-circle {
     border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
+    width: 128px;
+    height: 128px;
     object-fit: cover;
 }
 
 .quote-icon {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 56;
+    width: 56;
     filter: invert(80%) sepia(32%) saturate(302%) hue-rotate(5deg) brightness(98%) contrast(88%);
 }
 
@@ -66,8 +66,8 @@ blockquote {
 }
 
 .review-img {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 416px;
+    max-height: 416px;
 }
 
 .social {
@@ -103,17 +103,17 @@ h4 {
 }
 
 .label {
-    padding: 28px;
+    padding: 15px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
     z-index: 3;
     background: no-repeat center/100% url("../../images/png/pink-canvas.png");
 }
 
 .label-icon {
-    height: 1.5em;
-    width: 1.5em;
+    height: 36px;
+    width: 36px;
     filter: invert(20%) sepia(25%) saturate(6914%) hue-rotate(102deg) brightness(98%) contrast(107%);
 }
 
@@ -125,6 +125,11 @@ h4 {
 .border {
     border: 2px solid black;
     color: red;
+}
+
+.social {
+    width: 16px;
+    height: 16px;
 }
 
 #nav-main {
@@ -142,7 +147,7 @@ h4 {
 
 #home-hero {
     width: 100%;
-    height: 40em;
+    height: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +157,7 @@ h4 {
 
 #header-text-box {
     position: absolute;
-    width: 35em;
+    width: 40rem;
     background-color: white;
     padding: 2em .5em 2em .5em;
 }
@@ -160,7 +165,7 @@ h4 {
 
 #header-text-box h1 {
     text-align: center;
-    font-size: 5em;
+    font-size: 5rem;
     font-family: 'Lato', 'Raleway', sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -194,9 +199,8 @@ h4 {
     align-self: flex-end;
 }
 
-#header-label-box {
-    width: 36px;
-    height: 36px;
+#first-section {
+    margin-top: 10rem;
 }
 
 #first-section h3 {
@@ -225,8 +229,8 @@ h4 {
 }
 
 #second-section img {
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height: 345px;
 }
 
 #second-section p {
@@ -263,7 +267,7 @@ h4 {
 
 #about-section img {
     width: 360px;
-    height: 511px;
+    height: 479px;
 }
 
 #about-section h3 {
@@ -279,9 +283,60 @@ h4 {
     margin-top: 2.5rem;
 }
 
+/* Responsive Media Queries */
 @media (max-width: 576px) {
-    #header-text-box {
-        width: 25rem;
-        height: 25rem;
+    #home-hero {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
+
+    #header-text-box {
+        width: 18rem;
+        height: 12rem;
+    }
+
+    #header-text-box h1 {
+        font-size: 40px;
+    }
+
+    #header-text-box h2 {
+        font-size: 20px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    #header-box hr {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        height: 0.25px
+    }
+
+    #first-section {
+        margin-top: 5rem;
+    }
+
+    #first-section h3 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.0rem;
+    }
+
+    #first-section h5 {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #first-section img {
+        width: 320px;
+        height: 482px;
+    }
+
+    #first-section p {
+        text-align: left;
+        padding: .5rem 0rem .5rem 0rem;
+    }
+
 }
