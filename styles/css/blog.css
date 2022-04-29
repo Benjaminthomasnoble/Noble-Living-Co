@@ -1,0 +1,71 @@
+/* Blog Styles */
+#header-blog h1 {
+    text-align: center;
+}
+
+#header-blog h3 {
+    text-align: center;
+}
+
+#header-blog hr {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    height: 0.15px
+}
+
+@media (max-width: 300px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 301px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 500px) {
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 700px) {
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    h1 {
+        font-size: 78px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
