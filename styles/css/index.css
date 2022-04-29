@@ -83,7 +83,7 @@
     text-align: center;
 }
 
-#header-text-box h2 {
+#header-text-box h3 {
     text-align: center;
     font-size: 1.75em;
     padding-top: 15px;
@@ -151,7 +151,7 @@
     padding-bottom: 1.5rem;
 }
 
-#third-section-a h3 {
+#third-section-a h2 {
     margin-bottom: 3rem;
 }
 
@@ -164,7 +164,7 @@
     padding-bottom: 2rem;
 }
 
-#fourth-section h3 {
+#fourth-section h2 {
     margin-bottom: 3rem;
 }
 
@@ -172,7 +172,7 @@
     margin-top: 3rem;
 }
 
-#fifth-section h3 {
+#fifth-section h2 {
     margin-top: 5rem;
     margin-bottom: 3rem;
 }
@@ -182,7 +182,7 @@
     height: 479px;
 }
 
-#about-section h3 {
+#about-section h2 {
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
@@ -231,7 +231,7 @@
         margin-top: 5rem;
     }
 
-    #first-section h2 {
+    #first-section h3 {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
