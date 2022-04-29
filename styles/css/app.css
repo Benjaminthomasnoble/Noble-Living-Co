@@ -283,8 +283,14 @@ h4 {
     margin-top: 2.5rem;
 }
 
+
+/* 576 / 1425 = 40.42%*/
 /* Responsive Media Queries */
 @media (max-width: 576px) {
+    .navbar-toggler {
+        margin-left: 100 00px;
+    }
+
     #home-hero {
         display: flex;
         justify-content: center;
@@ -292,12 +298,12 @@ h4 {
     }
 
     #header-text-box {
-        width: 18rem;
+        width: 60%;
         height: 12rem;
     }
 
     #header-text-box h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     #header-text-box h2 {
