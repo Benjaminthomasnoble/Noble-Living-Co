@@ -10,6 +10,7 @@
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+    margin-bottom: 30px;
 }
 
 .blog-card img {
@@ -72,7 +73,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 992px) {
 
     h1 {
         font-size: 72px;
