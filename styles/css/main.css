@@ -31,9 +31,99 @@ h4 {
     font-size: 20px;
 }
 
-.navbar .navbar-brand .logo {
-    height: 150px;
-    width: 150px;
+/* navbar */
+.nav-container {
+    position: static;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    margin: 30px 160px 30px 160px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        position: static;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        margin: 30px 80px 30px 80px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    z-index: 9;
+}
+
+nav .links {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+nav li {
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+}
+
+.home_underline {
+    transform: translateX(-70px);
+    width: auto;
+    height: 2px;
+    background-color: white;
+    transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+}
+
+.list:hover>.home_underline {
+    transform: translatex(0px);
+}
+
+button {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 100px;
+    padding: 10px 30px 10px 30px;
+    transform-origin: center;
+    position: relative;
+    overflow: hidden;
+}
+
+nav .icon-burger {
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 .border {
@@ -49,7 +139,7 @@ h4 {
     font-size: 12px;
 }
 
-.navbar .nav-item {
+.navbar .links {
     font-family: 'Raleway', 'Lato', sans-serif;
     font-size: 14px;
     border-right: 1px solid;
@@ -93,4 +183,9 @@ blockquote {
 .social {
     width: 16px;
     height: 16px;
+}
+
+#nav-toggle {
+    position: absolute;
+    display: none;
 }

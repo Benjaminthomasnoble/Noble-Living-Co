@@ -1,3 +1,13 @@
+.page-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    background: white;
+}
+
 .product-img-circle {
     border-radius: 50%;
     width: 240px;
@@ -45,20 +55,6 @@
     font-weight: 600;
     z-index: 3;
     background: no-repeat center/100% url("../../images/png/pink-canvas.png");
-}
-
-
-#nav-main {
-    padding: 0px 100px 0px 100px;
-}
-
-#nav-main button {
-    margin-left: 30px;
-}
-
-#nav-main img {
-    width: 150px;
-    height: 150px;
 }
 
 #home-hero {
@@ -193,62 +189,4 @@
 
 #about-section p:last-of-type {
     margin-top: 2.5rem;
-}
-
-
-/* 576 / 1425 = 40.42%*/
-/* Responsive Media Queries */
-@media (max-width: 576px) {
-    .navbar-toggler {
-        margin-left: 100 00px;
-    }
-
-    #home-hero {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    #header-text-box {
-        width: 60%;
-        height: 12rem;
-    }
-
-    #header-text-box h3 {
-        padding-top: 1px;
-        padding-bottom: 1px;
-    }
-
-    #header-box hr {
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: black;
-        height: 0.25px
-    }
-
-    #first-section {
-        margin-top: 5rem;
-    }
-
-    #first-section h3 {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    #first-section h5 {
-        text-align: center;
-        font-weight: 600;
-    }
-
-    #first-section img {
-        width: 320px;
-        height: 482px;
-    }
-
-    #first-section p {
-        text-align: left;
-        padding: .5rem 0rem .5rem 0rem;
-    }
-
 }
