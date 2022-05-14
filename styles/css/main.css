@@ -38,10 +38,21 @@ h4 {
     left: 0px;
     right: 0px;
     display: flex;
-    margin: 30px 160px 0px 160px;
+    margin: 0px 60px 0px 60px;
     justify-content: space-between;
     align-items: center;
 }
+
+.nav-container>img:first-of-type {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-links {
+    margin-left: auto;
+}
+
+
 
 @media screen and (max-width: 1024px) {
     .nav-container {
@@ -50,8 +61,8 @@ h4 {
         left: 0px;
         right: 0px;
         display: flex;
-        margin: 30px 80px 30px 80px;
-        justify-content: space-between;
+        margin: 30px 40px 30px 40px;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -72,12 +83,7 @@ nav .logo {
     text-decoration: none;
     cursor: pointer;
     font-weight: 400;
-    margin: 0px 10px 0px 10px;
-}
-
-nav li {
-    overflow: hidden;
-    transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+    margin: 0px 20px 0px 20px;
 }
 
 .navbar-links {
@@ -88,12 +94,14 @@ nav li {
     padding-right: 30px;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .navbar-links>li {
     border-right: black solid 1.5px;
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
 }
 
 .navbar-links>li:last-of-type {
@@ -109,6 +117,11 @@ nav li {
 #nav-toggle {
     position: absolute;
     display: none;
+}
+
+#shopping-cart {
+    margin-left: 20px;
+    order: 1;
 }
 
 nav .icon-burger {
@@ -127,16 +140,22 @@ nav .icon-burger .line {
 
 @media screen and (max-width: 768px) {
     nav .logo {
-        z-index: 99;
+        z-index: 8;
     }
 
     .nav-container {
         margin: 30px 10px 0px 30px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #shopping-cart-container {
+        margin-right: auto;
     }
 
     .navbar-links {
         float: none;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 100%;
         right: 0;
@@ -146,7 +165,7 @@ nav .icon-burger .line {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 0px 0px 0px 60px;
+        padding: 0px 0px 0px 0px;
         background-color: white;
         backdrop-filter: blur(20px);
         overflow: hidden;
@@ -171,7 +190,6 @@ nav .icon-burger .line {
     nav .icon-burger {
         z-index: 9;
         display: block;
-        caret-color: transparent;
     }
 
     nav :checked~.navbar-links {
@@ -202,29 +220,19 @@ nav .icon-burger .line {
     border: 3px solid black !important;
 }
 
-.content {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
 
 .footer p {
     font-size: 12px;
 }
 
-blockquote {
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.empty-space {
-    margin: 180px 0px 180px 0px;
-}
-
 .cta {
     background-color: #DFCB9B;
+    font-family: 'raleway', 'lato', sans-serif;
     padding: 15px 30px 15px 30px;
     font-size: 18px;
     font-weight: bold;
+    border: 0px solid #DFCB9B;
     border-radius: 15px;
     transition: color .25s, background-color .25s;
 }
@@ -234,17 +242,7 @@ blockquote {
     color: white;
 }
 
-.review-quote {
-    padding-top: 1.5rem;
-    text-align: left;
-}
-
 .social {
     width: 16px;
     height: 16px;
-}
-
-#nav-toggle {
-    position: absolute;
-    display: none;
 }
