@@ -8,6 +8,15 @@
     background: white;
 }
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .product-img-circle {
     border-radius: 50%;
     width: 240px;
@@ -33,7 +42,16 @@
     max-height: 416px;
 }
 
-
+.label {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: no-repeat center/100% url("../../images/png/pink-canvas.png");
+    z-index: 3;
+}
 
 .label-icon {
     height: 36px;
@@ -41,21 +59,12 @@
     filter: invert(20%) sepia(25%) saturate(6914%) hue-rotate(102deg) brightness(98%) contrast(107%);
 }
 
-
 .page-subheading {
     font-size: 38px;
     text-align: center;
     font-weight: 600;
 }
 
-.label {
-    padding: 15px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    z-index: 3;
-    background: no-repeat center/100% url("../../images/png/pink-canvas.png");
-}
 
 .content {
     margin-top: 100px;
@@ -77,34 +86,31 @@ blockquote {
 }
 
 #home-hero {
-    width: 100%;
     height: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     background: no-repeat center/100% url("../../images/stock/women-laughing-1.jpg");
-    z-index: -1;
+    z-index: 0;
 }
 
 #header-text-box {
-    position: absolute;
-    width: 40rem;
+    position: relative;
     background-color: white;
-    padding: 2em .5em 2em .5em;
-}
+    border-radius: 1%;
 
+}
 
 #header-text-box h1 {
     text-align: center;
+    padding: 0px 15px 0px 15px;
 }
 
 #header-text-box h3 {
     text-align: center;
-    font-size: 1.75em;
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-family: 'lato', 'raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #header-text-box hr {
@@ -115,16 +121,18 @@ blockquote {
     height: 2px;
 }
 
+#header-label-box {
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+}
+
 #header-cta {
     display: flex;
     justify-content: center;
-    margin-right: 2em;
 }
 
-#header-label-box {
-    display: flex;
-    align-self: flex-end;
-}
+
 
 #first-section {
     margin-top: 10rem;
@@ -208,4 +216,34 @@ blockquote {
 
 #about-section p:last-of-type {
     margin-top: 2.5rem;
+}
+
+/* responsive breakpoints */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .label {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }

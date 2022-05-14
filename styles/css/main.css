@@ -12,7 +12,7 @@ p {
 }
 
 h1 {
-    font-size: 78px;
+    font-size: 72px;
     font-family: 'Lato', 'Raleway', sans-serif;
     font-weight: 300;
     font-style: italic;
@@ -29,6 +29,35 @@ h3 {
 h4 {
     font-weight: 600;
     font-size: 20px;
+}
+
+.border {
+    border: 3px solid black !important;
+}
+
+.cta {
+    background-color: #DFCB9B;
+    font-family: 'raleway', 'lato', sans-serif;
+    padding: 15px 30px 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px solid #DFCB9B;
+    border-radius: 15px;
+    transition: color .25s, background-color .25s;
+}
+
+.cta:hover {
+    background-color: #FE6161;
+    color: white;
+}
+
+.social {
+    width: 16px;
+    height: 16px;
+}
+
+.footer p {
+    font-size: 12px;
 }
 
 /* navbar */
@@ -215,35 +244,4 @@ nav .icon-burger .line {
     nav :checked~.icon-burger .line:nth-child(3) {
         transform: translateY(-9px) rotate(-50deg);
     }
-}
-
-/* navbar end */
-
-.border {
-    border: 3px solid black !important;
-}
-
-.footer p {
-    font-size: 12px;
-}
-
-.cta {
-    background-color: #DFCB9B;
-    font-family: 'raleway', 'lato', sans-serif;
-    padding: 15px 30px 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    border: 0px solid #DFCB9B;
-    border-radius: 15px;
-    transition: color .25s, background-color .25s;
-}
-
-.cta:hover {
-    background-color: #FE6161;
-    color: white;
-}
-
-.social {
-    width: 16px;
-    height: 16px;
 }
