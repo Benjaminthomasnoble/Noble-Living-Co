@@ -52,16 +52,19 @@ h4 {
     margin-left: auto;
 }
 
+#shopping-cart-container {
+    order: 3;
+}
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .nav-container {
         position: static;
         top: 0px;
         left: 0px;
         right: 0px;
         display: flex;
-        margin: 30px 40px 30px 40px;
+        margin: 0px 60px 0px 60px;
         justify-content: center;
         align-items: center;
     }
@@ -219,8 +222,6 @@ nav .icon-burger .line {
 .border {
     border: 3px solid black !important;
 }
-
-
 
 .footer p {
     font-size: 12px;
