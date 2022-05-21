@@ -242,14 +242,39 @@ blockquote {
     .label {
         display: none;
     }
-}
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
+    #home-hero {
+        height: 50vh;
+        font-size: .8em;
     }
 
-    #first-section-img {
-        max-width: 100%;
+    @media (max-width: 576px) {
+        /* .container {
+            max-width: 540px;
+        } */
+
+        #home-hero {
+            height: 50vh;
+            font-size: .6em;
+        }
+
+
     }
-}
+
+    @media (max-width: 524px) {
+        #home-hero {
+            height: 40vh;
+            font-size: .6em;
+        }
+
+        #home-hero .cta {
+            display: none;
+        }
+    }
+
+    @media (max-width: 428px) {
+        #home-hero {
+            height: 35vh;
+            font-size: .5em;
+        }
+    }
