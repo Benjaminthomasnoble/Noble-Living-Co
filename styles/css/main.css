@@ -8,27 +8,26 @@ body {
 
 p {
     font-weight: 300;
-    font-size: 18px;
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 4.5em;
     font-family: 'Lato', 'Raleway', sans-serif;
     font-weight: 300;
     font-style: italic;
 }
 
 h2 {
-    font-size: 1.0rem;
+    font-size: 1.75em;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.50em;
 }
 
 h4 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .border {
@@ -66,6 +65,7 @@ h4 {
     top: 0px;
     left: 0px;
     right: 0px;
+    bottom: 0px;
     display: flex;
     margin: 0px 60px 0px 60px;
     justify-content: space-between;
@@ -106,7 +106,6 @@ nav {
 }
 
 nav .logo {
-    font-size: 1.8rem;
     z-index: 9;
 }
 
