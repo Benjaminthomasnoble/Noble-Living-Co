@@ -7,6 +7,7 @@ body {
 }
 
 p {
+    font-size: 1.25em;
     font-weight: 300;
 }
 
@@ -18,14 +19,17 @@ h1 {
 }
 
 h2 {
+    font-family: 'lato', 'raleway', sans-serif;
     font-size: 1.75em;
 }
 
 h3 {
+    font-family: 'lato', 'raleway', sans-serif;
     font-size: 1.50em;
 }
 
 h4 {
+    font-family: 'lato', 'raleway', sans-serif;
     font-weight: 600;
     font-size: 1.25em;
 }
@@ -115,6 +119,11 @@ nav .logo {
     cursor: pointer;
     font-weight: 400;
     margin: 0px 20px 0px 20px;
+}
+
+.nav-items:hover {
+    color: #6f6f6f;
+    transition: color .25s;
 }
 
 .navbar-links {
