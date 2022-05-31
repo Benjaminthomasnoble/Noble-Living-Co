@@ -9,7 +9,7 @@
 }
 
 .container {
-    margin: 0em 6em 0em 6em;
+    margin: 5em 6em 5em 6em;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -57,8 +57,8 @@
 }
 
 .content {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .check-icons {
@@ -76,6 +76,31 @@
     width: 240px;
     height: 240px;
     object-fit: cover;
+}
+
+.product-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-wrapper {
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 345px;
 }
 
 .step-img-circle {
@@ -215,8 +240,8 @@
 /* Second Section */
 
 #second-section {
-    max-width: 1200px;
-    max-height: 600px;
+    /* max-width: 1200px;
+    max-height: 600px; */
     height: auto;
 }
 
@@ -246,6 +271,15 @@
     margin-top: 1em;
 }
 
+/* Third Section */
+
+
+#third-section-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* About Section */
 
 #about-section img {
@@ -254,6 +288,12 @@
 }
 
 /* responsive breakpoints */
+@media (max-width: 3000px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 1300px) {
     .section-text {
         font-size: .9em;
