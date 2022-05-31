@@ -215,6 +215,8 @@ nav .icon-burger .line {
         backdrop-filter: blur(20px);
         overflow: hidden;
         transition: .5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+
+
     }
 
     .nav-items {
