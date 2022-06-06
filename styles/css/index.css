@@ -16,6 +16,11 @@
     justify-content: center;
 }
 
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .section-title {
     font-size: 2.375em;
     text-align: center;
@@ -23,12 +28,24 @@
     margin: 1em 0em 1em 0em;
 }
 
+/* for breakpoints to match .section-text changes */
+.section-title-breakpoint {
+    font-size: 2.375em;
+}
+
 .section-subtitle {
     text-align: center;
     font-weight: 600;
 }
 
+/* for breakpoints to match .h4 changes */
+.section-subtitle-breakpoint {
+    font-size: 1.25em;
+}
+
 .section-img {
+    width: 100%;
+    height: auto;
     max-width: 100%;
     display: flex;
     flex-basis: 0;
@@ -56,9 +73,11 @@
     line-height: 1.65em;
 }
 
-.content {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.p-text-centered {
+    text-align: center;
+    margin: 0;
+    padding: .12em 0em .12em 0em;
+    line-height: 1.65em;
 }
 
 .check-icons {
@@ -78,17 +97,16 @@
     object-fit: cover;
 }
 
-.product-grid-wrapper {
+.grid-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-.product-grid-container {
+.product-grid-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -99,26 +117,72 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 420px;
-    height: 345px;
+    width: 400px;
+    height: 329px;
+}
+
+.step-wrapper {
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 329px;
+}
+
+.step-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .step-img-circle {
     border-radius: 50%;
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 
+.review-container {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.review-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review-content {
+    width: 75%;
+}
+
+.review-text-cont {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 75px;
+}
+
+.review-text {
+    display: flex;
+    width: 70%;
+}
+
 .review-img {
-    max-width: 416px;
-    max-height: 416px;
+    max-width: 375px;
+    max-height: 375px;
 }
 
 .quote-icon {
     height: 56;
     width: 56;
     filter: invert(80%) sepia(32%) saturate(302%) hue-rotate(5deg) brightness(98%) contrast(88%);
+    margin-bottom: 15px;
 }
 
 .label {
@@ -200,8 +264,6 @@
     margin: 0px 0px 25px 0px;
 }
 
-
-
 /* First Section */
 
 #first-section {
@@ -225,9 +287,7 @@
 }
 
 #first-section-text-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     flex-basis: 0;
     flex-grow: 1.5;
 }
@@ -273,11 +333,28 @@
 
 /* Third Section */
 
-
 #third-section-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Fourth Section */
+
+#fourth-section-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fifth Section */
+
+#fifth-section {
+    flex-direction: column;
+}
+
+#second-review-img {
+    order: 2;
 }
 
 /* About Section */
@@ -294,15 +371,58 @@
     }
 }
 
+@media (max-width: 1430px) {
+    .product-wrapper {
+        width: 380px;
+        height: 312px;
+    }
+
+    .step-wrapper {
+        width: 380px;
+        height: 313px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .product-wrapper {
+        width: 360px;
+        height: 296px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .step-wrapper {
+        width: 320px;
+        height: 263px;
+    }
+
+}
+
 @media (max-width: 1300px) {
     .section-text {
         font-size: .9em;
     }
+
+    /* adjusts font size to match above .section-text .9em */
+    .section-title-breakpoint {
+        font-size: 2.1375em;
+    }
+
+    /* adjusts subtitle to match .h4 1.125em */
+    .section-subtitle-breakpoint {
+        font-size: 1.125em;
+    }
+
 }
 
 @media (max-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+
+    .step-wrapper {
+        width: 300px;
+        height: 247px;
     }
 }
 
@@ -314,25 +434,25 @@
     #second-section {
         flex-direction: column;
     }
-}
 
-@media (max-width: 1000px) {
-    #first-section {
+    #second-section-img {
+        order: 0;
+    }
+
+    #third-section {
         flex-direction: column;
     }
 
+    #fourth-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
     #first-section-text {
         max-width: 100%;
     }
 
-    #second-section {
-        flex-direction: column;
-    }
-
-    #second-section-img {
-        order: 0;
-        /* max-width: 60%; */
-    }
 
     #second-section-text {
         max-width: 100%;
@@ -344,23 +464,12 @@
         max-width: 960px;
     }
 
-    #first-section {
-        flex-direction: column;
-    }
-
-    #second-section {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 865px) {
     .container {
         max-width: 720px;
         margin: 10em 2em 10em 2em;
-    }
-
-    .section-text {
-        font-size: .9em;
     }
 
     #first-section-img {
@@ -382,17 +491,17 @@
         font-size: .8em;
     }
 
+    .section-title-breakpoint {
+        font-size: 1.9em;
+    }
+
+    .section-subtitle-breakpoint {
+        font-size: 1em;
+    }
+
     #home-hero {
         height: 50vh;
         font-size: .8em;
-    }
-
-    #first-section {
-        flex-direction: column;
-    }
-
-    #second-section {
-        flex-direction: column;
     }
 
     #second-section-img {
@@ -408,9 +517,6 @@
         font-size: .8em;
     }
 
-    #first-section {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 524px) {
@@ -423,14 +529,6 @@
 
     #home-hero .cta {
         display: none;
-    }
-
-    #first-section {
-        flex-direction: column;
-    }
-
-    #second-section {
-        flex-direction: column;
     }
 
     #second-section-img {
