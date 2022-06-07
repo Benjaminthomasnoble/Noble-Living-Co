@@ -183,6 +183,16 @@
     margin-bottom: 15px;
 }
 
+.about-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.about-text {
+    width: 75%;
+}
+
 .label {
     width: 100%;
     height: auto;
@@ -199,7 +209,6 @@
     width: 36px;
     filter: invert(20%) sepia(25%) saturate(6914%) hue-rotate(102deg) brightness(98%) contrast(107%);
 }
-
 
 .blockquote {
     font-weight: 300;
@@ -356,6 +365,12 @@
 #about-section img {
     width: 360px;
     height: 479px;
+}
+
+#about-section-text-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* responsive breakpoints */
