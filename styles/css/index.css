@@ -52,6 +52,8 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px rgb(158, 158, 158);
+    border-radius: 5%;
 }
 
 .section-text-cont {
@@ -95,6 +97,7 @@
     width: 240px;
     height: 240px;
     object-fit: cover;
+    box-shadow: 5px 5px 5px rgb(158, 158, 158);
 }
 
 .grid-container {
@@ -141,6 +144,11 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
+    transition: transform ease .25s;
+}
+
+.step-img-circle:hover {
+    transform: translate(0px, -5px)
 }
 
 .review-container {
@@ -209,6 +217,12 @@
 .blockquote {
     font-weight: 300;
     font-size: 20px;
+}
+
+.background {
+    width: 100%;
+    background-color: white;
+    padding: 5px 0px 5px 0px;
 }
 
 .empty-space {
@@ -361,6 +375,7 @@
 #about-section-img {
     max-width: 360px;
     max-height: 480px;
+    border-radius: 5%;
 }
 
 /* responsive breakpoints */
