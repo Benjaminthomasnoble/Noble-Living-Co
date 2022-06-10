@@ -484,12 +484,12 @@
         max-width: 100%;
     }
 
-
     #second-section-text {
         max-width: 100%;
     }
 
     #about-section {
+        display: flex;
         flex-direction: column;
     }
 
@@ -526,7 +526,6 @@
 @media (max-width: 865px) {
     .container {
         max-width: 720px;
-        margin: 10em 2em 10em 2em;
     }
 
     #first-section-img {
