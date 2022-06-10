@@ -102,7 +102,52 @@ h4 {
     order: 3;
 }
 
+/* Footer Section */
+.footer-container {
+    background-color: white;
+    padding: 0rem 0rem 2rem 0rem;
+}
 
+.footer {
+    width: 80%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h5 {
+    margin-bottom: 2rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.footer-link:hover {
+    color: #FE6161;
+    transition: .2s ease-out;
+}
+
+#footer-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+/* Breakpoints */
 @media screen and (max-width: 992px) {
     .nav-container {
         position: static;

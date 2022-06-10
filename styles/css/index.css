@@ -123,6 +123,13 @@
     height: 329px;
 }
 
+.step-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .step-wrapper {
     display: flex;
     flex-direction: column;
@@ -130,13 +137,6 @@
     align-items: center;
     width: 400px;
     height: 329px;
-}
-
-.step-grid-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .step-img-circle {
@@ -377,6 +377,8 @@
     max-height: 480px;
     border-radius: 5%;
 }
+
+
 
 /* responsive breakpoints */
 @media (max-width: 3000px) {
