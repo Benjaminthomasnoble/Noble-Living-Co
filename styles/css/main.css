@@ -266,19 +266,29 @@ nav .icon-burger .line {
     border-radius: 5px;
 }
 
-@media (max-width: 3000px) {
-    .footer {
-        height: 30vh;
-    }
-
+@media (max-width: 1500px) {
     .footer-email-form {
         margin-top: 2rem;
     }
 }
 
+@media (max-width: 978px) {
+    .footer {
+        height: 50vh;
+    }
+
+    .footer-3 {
+        display: none;
+    }
+
+    .footer-1 {
+        display: none;
+    }
+}
+
 @media (max-width: 820px) {
     .footer {
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -354,5 +364,20 @@ nav .icon-burger .line {
 
     nav :checked~.icon-burger .line:nth-child(3) {
         transform: translateY(-9px) rotate(-50deg);
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-email-form {
+        display: none;
     }
 }
