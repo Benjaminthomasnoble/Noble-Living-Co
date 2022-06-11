@@ -1,4 +1,13 @@
 /* Blog Styles */
+
+.blog-card-container {
+    max-width: 950px;
+    max-height: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
 .blog-card {
     /* width: 940px;
     height: 350px; */
@@ -12,14 +21,14 @@
     margin-bottom: 25px;
 }
 
-.blog-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.blog-card-text {
-    padding-top: 50px;
-    padding-bottom: 10px;
+.blog-img-cont {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+    width: 452px;
+    height: 340px;
 }
 
 .blog-btn {
@@ -27,74 +36,19 @@
     color: white;
 }
 
-#header-blog h1 {
-    text-align: center;
+#blog-header {
+    display: flex;
+    flex-direction: column;
 }
 
-#header-blog h3 {
-    text-align: center;
-    font-family: 'Dancing Script', sans-serif;
+#blog-header h1 {
+    margin: .4em 0 .2em 0;
 }
 
-#header-blog hr {
+#blog-header hr {
     width: 45%;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
-    height: 0.15px
-}
-
-@media (max-width: 300px) {
-
-    h1 {
-        font-size: 36px;
-    }
-
-    h3 {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 301px) {
-
-    h1 {
-        font-size: 42px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 500px) {
-
-    h1 {
-        font-size: 64px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 992px) {
-
-    h1 {
-        font-size: 72px;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    h1 {
-        font-size: 78px;
-    }
-
-    h3 {
-        font-size: 36px;
-    }
+    height: 1px;
 }

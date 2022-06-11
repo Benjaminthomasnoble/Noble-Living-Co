@@ -2,7 +2,6 @@
 /* main: #F7F2EB */
 /* secondary: #FE6161 */
 
-
 body {
     font-family: 'Lato', 'Raleway', sans-serif !important;
     background-color: #F7F2EB;
@@ -41,6 +40,98 @@ h4 {
     font-weight: 600;
     font-size: 1.25em;
     margin: 1em 0em 1em 0em;
+}
+
+.container {
+    margin: 5em 6em 5em 6em;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.page-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    background: white;
+}
+
+.section-title {
+    font-size: 2.375em;
+    text-align: center;
+    font-weight: 600;
+    margin: 1em 0em 1em 0em;
+}
+
+/* for breakpoints to match .section-text changes */
+.section-title-breakpoint {
+    font-size: 2.375em;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-subtitle-left {
+    text-align: left;
+    font-weight: 600;
+}
+
+/* for breakpoints to match .h4 changes */
+.section-subtitle-breakpoint {
+    font-size: 1.25em;
+}
+
+.section-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(158, 158, 158);
+    border-radius: 5%;
+}
+
+.section-text-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.p-text {
+    text-align: left;
+    margin: 0;
+    padding: .12em 0em .12em 0em;
+    line-height: 1.65em;
+}
+
+.p-text-centered {
+    text-align: center;
+    margin: 0;
+    padding: .12em 0em .12em 0em;
+    line-height: 1.65em;
+}
+
+.empty-space {
+    margin: 180px 0px 180px 0px;
 }
 
 .border {
@@ -210,7 +301,7 @@ nav .logo {
 }
 
 .nav-items:hover {
-    color: #6f6f6f;
+    color: #FE6161;
     transition: color .25s;
 }
 
