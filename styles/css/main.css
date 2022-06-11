@@ -44,7 +44,7 @@ h4 {
 
 .container {
     margin: 5em 6em 5em 6em;
-    max-width: 1200px;
+    max-width: 1600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,6 +151,7 @@ h4 {
     border: 0px solid #DFCB9B;
     border-radius: 15px;
     transition: color .25s, background-color .25s;
+    cursor: pointer;
 }
 
 .cta:hover {
