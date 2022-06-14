@@ -5,57 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap v4.1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles/css/main.css">
-    <link rel="stylesheet" href="styles/css/index.css">
     <!-- Google Font_Lato Light & Raleway-->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
-
     <title>Home | Noble Living Co</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid" id="nav-main">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="images/logo/logo-color.png" alt="Noble living co logo" width="150" height="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-row-reverse bd-highlight" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog For Women</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Empowered Classes</a>
-                    </li>
-                </ul>
-            </div>
-            <button type="button" class="btn cta d-none d-md-block">Shop Now</button>
+    <nav class="nav-container">
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">
+            <img src="images/logo/logo-color.png" alt="Noble Living Company Logo" width="150" height="150">
         </div>
+        </div>
+        <div id="shopping-cart">
+            <img src="images/svg/shopping-bag-icon.svg" viewBox alt="shopping bag icon" width="36" height="36">
+        </div>
+        <ul class="navbar-links">
+            <li>
+                <a href="/index.html" class="nav-items">Home</a>
+            </li>
+            <li>
+                <a href="store/store.html" class="nav-items">Store</a>
+            </li>
+            <li>
+                <a href="blog/blog.html" class="nav-items">Blog</a>
+            </li>
+            <button id="nav-cta" class="cta">Shop Now</button>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
     </nav>
 
-    <!-- Header Image and Main Header for Home Page -->
+    <!-- main header-->
     <main>
         <header id="home-hero">
-            <div class="container" id="header-text-box">
+            <div id="header-text-box">
                 <h1>Noble Living Co.</h1>
                 <h3>
                     Rediscover Your Natural Beauty
@@ -63,381 +55,366 @@
                     All Natural Products For Women
                 </h3>
                 <div id="header-cta">
-                    <button type="button" class="btn cta d-none d-md-block">Shop Now</button>
-                </div>
-            </div>
-
-            <!-- Header Labels -->
-            <div class="container-fluid d-flex flex-column" id="header-label-box">
-                <div class="row align-items-end">
-                    <div class="col-md-4 d-none d-md-block label">
-                        <img src="images/svg/plant-leaf-icon.svg" viewBox alt="leaf icon" class="label-icon" width="36"
-                            height="36">Save Money
-                    </div>
-                    <div class="col-md-4 label d-none d-md-block">
-                        <img src="images/svg/plant-leaf-icon.svg" viewBox alt="leaf icon" class="label-icon" width="36"
-                            height="36">
-                        Save Time
-                    </div>
-                    <div class="col-md-4 label d-none d-md-block">
-                        <img src="images/svg/plant-leaf-icon.svg" viewBox alt="leaf icon" class="label-icon" width="36"
-                            height="36">
-                        Save Your Skin
-                    </div>
+                    <button type="button" class="cta">Shop Now</button>
                 </div>
             </div>
         </header>
-    </main>
+        <div id="header-label-box">
+            <div class="label">
+                <img src="images/svg/plant-leaf-icon.svg" viewBox alt="leaf icon" class="label-icon" width="36"
+                    height="36">Save Money
+            </div>
+            <div class="label">
+                <img src="images/svg/plant-leaf-icon.svg" viewBox alt="leaf icon" class="label-icon" width="36"
+                    height="36">
+                Save Time
+            </div>
+            <div class="label">
+                <img src="images/svg/plant-leaf-icon.svg" viewBox alt="leaf icon" class="label-icon" width="36"
+                    height="36">
+                Save Your Skin
+            </div>
+        </div>
 
-    <!-- Main Content -->
-    <!-- First Section -->
 
-    <main>
+        <!-- Main Content -->
+        <!-- First Section -->
         <section class="container" id="first-section">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <img src="images/stock/girl-laughing-field.png" alt="Girl smiling in field at sunset" width="480"
-                        height="722">
+            <div id="first-section-img">
+                <img class="section-img" src="images/stock/girl-laughing-field.png"
+                    alt="Girl smiling in field at sunset" width="722" height="480">
+            </div>
+            <div class="section-text-cont" id="first-section-text-cont">
+                <div class="section-text">
+                    <h2 class="section-title">Win back your self-confidence</h2>
+                    <h4 class="section-subtitle">Did you know...</h4>
+                    <div class="feature">
+                        <p class="p-text">Harmful chemicals in mainstream products damage and blemish sensitive
+                            skin?
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <p class="p-text">Millions of dollars are wasted on products
+                            recommended by
+                            so called
+                            "experts"
+                            that don't
+                            work?
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <p class="p-text">Every health and beauty obstacle has an all natural solution?</p>
+                    </div>
+                    <div>
+                        <p class="p-text">
+                            There are so many women burdened with anxiety over the way they look and feel. At Noble
+                            Living
+                            Co. we know there's a better way to live. Its time to stop letting fear hold you back.
+                            Its
+                            time
+                            to rediscover your natural beauty with 100% chemical free facial care and beauty
+                            products so
+                            you
+                            can live your life to the fullest.
+                        </p><br>
+                    </div>
+                    <div>
+                        <p class="p-text">
+                            Try one of our products for yourself today and if you don't love it, we'll give you a
+                            full
+                            refund - no questions asked!
+                        </p>
+                    </div>
+                    <div id="first-section-btn">
+                        <button class="cta">Shop Now</button>
+                    </div>
                 </div>
-                <article class="col-lg-6 text-center">
-                    <h2 class="page-subheading">Win back your self-confidence</h2>
-                    <h5>Did you know...</h5>
-                    <p>Harmful chemicals in mainstream products damage and blemish sensitive skin?</p>
-                    <p>Millions of dollars are wasted on products recommended by so called "experts" that don't
-                        work?
-                    </p>
-                    <p>Every health and beauty obstacle has an all natural solution?</p>
-                    <p>
-                        There are so many women burdened with anxiety over the way they look and feel. At Noble
-                        Living
-                        Co. we know there's a better way to live. Its time to stop letting fear hold you back. Its
-                        time
-                        to rediscover your natural beauty with 100% chemical free facial care and beauty products so
-                        you
-                        can live your life to the fullest.
-                    </p>
-                    <p>
-                        Try one of our products for yourself today and if you don't love it, we'll give you a full
-                        refund - no questions asked!
-                    </p>
-                    <button type="button" class="btn cta">Shop Now</button>
-                </article>
             </div>
         </section>
+
 
         <!-- Second Section -->
-        <div class="empty-space">
-        </div>
         <section class="container" id="second-section">
-            <div class="row">
-                <article class="col-lg-6 text-center">
-                    <h2 class="page-subheading">Be Your Own Hero</h2>
-                    <p>Are you ready to take the life changing step of switching to all natural products? It's simpler
-                        and more affordable than you think! Start an all natural self care routine that works today.</p>
-                    <button type="button" class="btn cta">Shop Now</button>
-                </article>
-                <div class="col-lg-6">
-                    <img src="images/stock/video-placeholder-lg.png" alt="A blank video placeholder image" width="450"
-                        height="345">
+            <div class="" id="second-section-img">
+                <!-- <iframe class="section-video" width="560" height="315" src="https://www.youtube.com/embed/mBOt3rLcstw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> -->
+                <img class="section-img" src="images/hope/video-placeholder.png" alt="Girl smiling in field at sunset"
+                    width="600" height="360">
+            </div>
+            <div class="section-text-cont" id="second-section-text-cont">
+                <div class="section-text">
+                    <h2 class="section-title">Be Your Own Hero</h2>
+                    <p class="p-text">
+                        Are you ready to take the life changing step of switching to all natural products? It's
+                        simpler
+                        and more affordable than you think! Start an all natural self care routine that works today.
+                    </p>
+                    <div id="second-section-btn">
+                        <button class="cta content">Shop Now</button>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="empty-space">
-        </div>
+
+
 
         <!-- Third Section -->
-        <section class="container" id="third-section-a">
-            <span>
-                <h2 class="page-subheading">We Sell 100% Chemical Free Products</h2>
-            </span>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <h4>All Natural Moisturizer</h4>
+        <section class="grid-container container" id="third-section">
+            <h2 class="section-title section-title-breakpoint">We Sell 100% Chemical Free Products</h2>
+            <div class="product-grid-wrapper">
+                <div class="product-wrapper">
+                    <h4 class="section-subtitle section-subtitle-breakpoint">All Natural Moisturizer</h4>
                     <img class="product-img-circle" src="images/products/moisturizer-square.jpg"
                         alt="All natural moisturizer in jar" width="240" height="240">
                 </div>
-                <div class="col-md-4 text-center">
-                    <h4>Rose Witch Hazel Facial Toner</h4>
+                <div class="product-wrapper">
+                    <h4 class="section-subtitle section-subtitle-breakpoint">Rose Witch Hazel Facial Toner</h4>
                     <img class="product-img-circle" src="images/products/witch-hazel-square.jpg"
                         alt="Rose witch hazel facial toner in a bottle" width="240" height="240">
                 </div>
-                <div class="col-md-4 text-center">
-                    <h4>Facial Cleansing Honey</h4>
+                <div class="product-wrapper">
+                    <h4 class="section-subtitle section-subtitle-breakpoint">Facial Cleansing Honey</h4>
                     <img class="product-img-circle" src="images/products/honey-square.jpg"
                         alt="Facial cleansing honey in a jar" width="240" height="240">
                 </div>
             </div>
-        </section>
-        <section class="container" id="third-section-b">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <h4>All Natural Hairspray</h4>
+            <div class="product-grid-wrapper">
+                <div class="product-wrapper">
+                    <h4 class="section-subtitle section-subtitle-breakpoint">All Natural Hairspray</h4>
                     <img class="product-img-circle" src="images/products/hairspray-square.jpg"
                         alt="All natural hairspray in a glass bottle" width="240" height="240">
                 </div>
-                <div class="col-md-6 text-center">
-                    <h4>All Natural Facial Moisturizer (sample)</h4>
+                <div class="product-wrapper">
+                    <h4 class="section-subtitle section-subtitle-breakpoint">All Natural Facial Moisturizer (sample)
+                    </h4>
                     <img class="product-img-circle" src="images/products/sample-moisturizer-square.png"
                         alt="Sample portion of all natural facial moisturizer in a jar" width="240" height="240">
                 </div>
-                <div class="text-center content" id="third-section-btn">
-                    <button type="button" class="btn cta">Shop Now</button>
-                </div>
             </div>
-            <div class="empty-space">
+            <div id="third-section-btn">
+                <button type="button" class="cta content">Shop Now</button>
             </div>
         </section>
 
 
         <!-- Fourth Section -->
-        <section class="container" id="fourth-section">
+        <section class="grid-container container" id="fourth-section">
             <span>
-                <h2 class="page-subheading">How It Works</h2>
+                <h2 class="section-title section-title-breakpoint">How It Works</h2>
             </span>
-            <div class="row">
-                <div class="col-md-4 text-center">
+            <div class="step-grid-wrapper">
+                <div class="step-wrapper">
                     <img class="step-img-circle" src="images/png/one-pink.png" alt="The number one" width="128"
                         height="128">
-                    <p>Purchase our all natural skin care products.</p>
+                    <div class="section-text">
+                        <p class="p-text-centered">Purchase our all natural skin care products.</p>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="step-wrapper">
                     <img class="step-img-circle" src="images/png/two-pink.png" alt="The number two" width="128"
                         height="128">
-                    <p>Download your own free 3 step facial care routine and work the steps just a few minutes a day.
-                    </p>
+                    <div class="section-text">
+                        <p class="p-text-centered">Download your own free 3 step facial care routine and work the
+                            steps
+                            just
+                            a few minutes a
+                            day.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="step-wrapper">
                     <img class="step-img-circle" src="images/png/three-pink.png" alt="The number three" width="128"
                         height="128">
-                    <p>Watch your confidence build and the transformation begin!</p>
+                    <div class="section-text">
+                        <p class="p-text-centered">Watch your confidence build and the transformation begin!</p>
+                    </div>
                 </div>
             </div>
+            <div class="" id="fourth-section-btn">
+                <button type="button" class="cta">Shop Now</button>
+            </div>
         </section>
-        <div class="text-center content" id="third-section-btn">
-            <button type="button" class="btn cta">Shop Now</button>
 
-            <!-- Fifth Section -->
-            <section class="container-fluid" id="fifth-section">
-                <h2 class="page-subheading">Customer Reviews</h2>
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <img src="images/reviews/review-anneliese-square.png" alt="Woman in pink sweater smiling"
-                            class="review-img" width="416" height="416">
-                    </div>
-                    <article class="col-lg-6 text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-lg-8">
-                                <img src="images/svg/quote-icon.svg" viewBox alt="Quotation icon" class="quote-icon"
-                                    width="56" height="56">
-                                <blockquote class="review-quote">
-                                    My skin feels great ALL DAY after using the moisturizer in the morning! It feels
-                                    refreshing
-                                    on
-                                    the skin & has none of the tacky, thick feeling of other moisturizers.
-                                </blockquote>
-                                <p>
-                                    - Anneliese, massage therapist
-                                </p>
-                            </div>
+        </section>
+
+
+        <!-- Fifth Section -->
+        <section class="container" id="fifth-section">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review-container content">
+                <div class="review-wrapper">
+                    <img src="images/reviews/review-anneliese-square.png" alt="Woman in pink sweater smiling"
+                        class="section-img review-img" width="416" height="416">
+                    <div class="review-text-cont">
+                        <div class="section-text review-text">
+                            <img src="images/svg/quote-icon.svg" viewBox alt="Quotation icon" class="quote-icon"
+                                width="56" height="56">
+                            <p class="p-text ">
+                                My skin feels great ALL DAY after using the moisturizer in the morning! It feels
+                                refreshing
+                                on
+                                the skin & has none of the tacky, thick feeling of other moisturizers.
+                            </p><br>
+                            <p class="p-text">
+                                - Anneliese, massage therapist
+                            </p>
                         </div>
-                    </article>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <img src="images/reviews/review-heather-square.png" alt="woman in gray shirt smiling"
-                            class="review-img" width="416" height="416">
                     </div>
-                    <article class="col-lg-6 text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-lg-8">
-                                <img src="images/svg/quote-icon.svg" viewBox alt="quotation icon" class="quote-icon"
-                                    width="56" heigh="56">
-                                <blockquote class="review-quote">
-                                    I've been looking for a more natural face care that doesn't leave my skin oily. This
-                                    product
-                                    feels light and moisturizers effectively. It smells amazing too!
-                                    I highly recommend it.
-                                </blockquote>
-                                <p>
-                                    - Heather, stay at home mom
-                                </p>
-                            </div>
+                </div>
+            </div>
+            <div class="review-container content">
+                <div class="review-wrapper">
+                    <img src="images/reviews/review-heather-square.png" alt="woman in gray shirt smiling"
+                        class="section-img review-img" id="second-review-img" width="416" height="416">
+                    <div class="review-text-cont">
+                        <div class="section-text review-text">
+                            <img src="images/svg/quote-icon.svg" viewBox alt="quotation icon" class="quote-icon"
+                                width="56" height="56">
+                            <p class="p-text">
+                                I've been looking for a more natural face care that doesn't leave my skin oily.
+                                This
+                                product
+                                feels light and moisturizers effectively. It smells amazing too!
+                                I highly recommend it.
+                            </p><br>
+                            <p class="p-text">
+                                - Heather, stay at home mom
+                            </p>
                         </div>
-                    </article>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <img src="images/reviews/review_leah_square.png" alt="woman in green shirt smiling"
-                            class="review-img" width="416" height="416">
                     </div>
-                    <article class="col-lg-6 text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-lg-8">
-                                <img src="images/svg/quote-icon.svg" viewBox alt="quotation icon" class="quote-icon"
-                                    width="56" heigh="56">
-                                <blockquote class="review-quote">
-                                    I'm absolutely loving mine! I've been using it twice a day, and my skin feels so
-                                    clean and
-                                    soft.
-                                    Even when I've been around dusty clays, it still keeps my skin from drying out.
-                                </blockquote>
-                                <p>
-                                    - Leah, dance teacher
-                                </p>
-                            </div>
+                </div>
+            </div>
+            <div class="review-container content">
+                <div class="review-wrapper">
+                    <img src="images/reviews/review-leah-square.png" alt="woman in green shirt smiling"
+                        class="section-img review-img" width="416" height="416">
+                    <div class="review-text-cont">
+                        <div class="section-text review-text">
+                            <img src="images/svg/quote-icon.svg" viewBox alt="quotation icon" class="quote-icon"
+                                width="56" heigh="56">
+                            <p class="p-text">
+                                I'm absolutely loving mine! I've been using it twice a day, and my skin feels so
+                                clean and
+                                soft.
+                                Even when I've been around dusty clays, it still keeps my skin from drying out.
+                            </p><br>
+                            <p class="p-text">
+                                - Leah, dance teacher
+                            </p>
                         </div>
-                    </article>
-                </div>
-
-            </section>
-
-            <section class="container" id="about-section">
-                <div class="row align-items-center content">
-                    <div class="col text-center">
-                        <img src="images/hope/noble-family.png" alt="family smiling" width="360" height="479">
                     </div>
-                    <article class="col text-center">
-                        <h2 class="page-subheading">About Noble Living Co.</h2>
-                        <p>
-                            We at Noble Living Co are a husband/wife team, learning to live life to the fullest. Our
-                            desire
-                            is to encourage people like you to live a healthy lifestyle of passion, purpose and fun! We
-                            have
-                            been making moisturizer and producing artistic, meaningful content since 2019.
-                        </p>
-                        <p>
-                            Reach out to us if you have any questions or feedback! We'd love to hear from you.
-                            Email us at <a
-                                href="mailto:noblelivingco@gmail.com?subject=Hey There!">noblelivingco@gmail.com</a>
-                        </p>
-                    </article>
                 </div>
-            </section>
+            </div>
+            <div>
+                <button type="button" class="cta">Shop Now</button>
+            </div>
+        </section>
 
-            <!-- Footer -->
-            <footer class="text-center text-lg-start bg-light text-muted">
-                <!-- Section: Social media -->
-                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                    <div class="me-5 d-none d-lg-block">
-                        <span>Get connected with us on social networks:</span>
-                    </div>
-
-                    <di class="me-auto">
-                        <a href="https://www.instagram.com/noble_hopeann/" class="me-4 text-reset">
-                            <i class="fab fab fa-instagram"></i>
-                            <img src="images/svg/instagram.svg" alt="instagram icon" class="social" width="16"
-                                height="16">
-                        </a>
-                        <a href="https://www.facebook.com/noblelivingco/" class="me-4 text-reset">
-                            <i class="fab fa-facebook-f"></i>
-                            <img src="images/svg/facebook.svg" alt="facebook icon" class="social" width="16"
-                                height="16">
-                        </a>
-                        <a href="https://www.linkedin.com/company/noble-living-co" class="me-4 text-reset">
-                            <i class="fab fa-linkedin"></i>
-                            <img src="images/svg/linkedin.svg" alt="linkedin icon" class="social" width="16"
-                                height="16">
-
-                        </a>
-                        <!-- Right -->
-                </section>
-                <!-- Section: Social media
-
-            <!-- Section: Links  -->
-                <section class="footer">
-                    <div class="container text-center text-md-start mt-5">
-                        <!-- Grid row -->
-                        <div class="row mt-3">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                <!-- Content -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    <i class="fas fa-gem"></i>Noble Living Co.
-                                </h6>
-                                <p>
-                                    Live life to the fullest
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Products
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">All Natural Facial Moisturizer</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Facial Cleansing Honey</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Rose Witch Hazel Facial Toner</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">All Natural Hairspray</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Useful links
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Blog</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Store</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Empowered Classes</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Contact
-                                </h6>
-                                <p><i class="fas fa-home"></i> Dillsburg, PA 17019, US</p>
-                                <p>
-                                    <i class="fas fa-envelope"></i>
-                                    noblelivingco@gmail.com.com
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-                        </div>
-                        <!-- Grid row -->
-                    </div>
-                </section>
-                <!-- Section: Links  -->
-
-                <!-- Copyright -->
-                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                    © 2022 Copyright:
-                    <a class="text-reset fw-bold" href="https://noblelivingco.com/">Noblelivingco.com</a>
+        <!-- About Section -->
+        <section class="container" id="about-section">
+            <div class="section-img" id="about-img-cont">
+                <img id="about-section-img" src="images/hope/noble-family.png" alt="family smiling" width="360"
+                    height="480">
+            </div>
+            <article class="section-text-cont">
+                <div class="section-text" id="about-text">
+                    <h2 class="section-title">About Noble Living Co.</h2>
+                    <p class="p-text">
+                        We at Noble Living Co are a husband/wife team, learning to live life to the fullest. Our
+                        desire
+                        is to encourage people like you to live a healthy lifestyle of passion, purpose and fun!
+                        We
+                        have
+                        been making moisturizer and producing artistic, meaningful content since 2019.
+                    </p>
+                    <p>
+                        Reach out to us if you have any questions or feedback! We'd love to hear from you.
+                        Email us at <a
+                            href="mailto:noblelivingco@gmail.com?subject=Hey There!">noblelivingco@gmail.com</a>
+                    </p>
                 </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
+            </article>
+        </section>
+    </main>
 
-            <!-- Bootstrap JavaScript plugin  -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h5>
+                    <i></i>Noble Living Co.
+                </h5>
+                <img src="images/logo/logo-color.png" alt="Noble Living Company Logo" width="100" height="100">
+            </div>
+            <div class="footer-heading footer-2">
+                <h5>
+                    Products
+                </h5>
+                <p>
+                    <a href="#!" class="footer-link">All Natural Facial Moisturizer</a>
+                </p>
+                <p>
+                    <a href="#!" class="footer-link">Facial Cleansing Honey</a>
+                </p>
+                <p>
+                    <a href="#!" class="footer-link">Rose Witch Hazel Facial Toner</a>
+                </p>
+                <p>
+                    <a href="#!" class="footer-link">All Natural Hairspray</a>
+                </p>
+            </div>
+            <div class="footer-heading footer-3">
+                <h5>
+                    Pages
+                </h5>
+                <p>
+                    <a href="#!" class="footer-link">Blog</a>
+                </p>
+                <p>
+                    <a href="#!" class="footer-link">Store</a>
+                </p>
+                <p>
+                    <a href="#!" class="footer-link">Empowered Classes</a>
+                </p>
+            </div>
+            <div class="footer-heading footer-4">
+                <h5>
+                    Contact
+                </h5>
+                <p><i class="footer-link"></i> Dillsburg, PA 17019, US</p>
+                <p>
+                    <i class="footer-link"></i>
+                    noblelivingco@gmail.com.com
+                </p>
+            </div>
+            <div class="footer-email-form">
+                <h5>Join our newsletter</h5>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn"></input>
+            </div>
+        </div>
+    </footer>
+
+    <!--  -->
+    <footer id="footer-section">
+        <div>
+            © 2022 Copyright:
+            <a href="https://noblelivingco.com/">Noblelivingco.com</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript plugin  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
                 integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                crossorigin="anonymous"></script>
+                crossorigin="anonymous"></script> -->
 </body>
 
 </html>

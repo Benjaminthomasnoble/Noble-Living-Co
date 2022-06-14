@@ -5,39 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap v4.1 -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="../styles/css/main.css">
-    <link rel="stylesheet" href="../styles/css/store.css">
     <!-- Google Font_Lato Light, Dancing Script & Raleway-->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script&display=swap"
         rel="stylesheet">
-
     <title>Store | Noble Living Co.</title>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-
+    <!-- Navbar (to be replaced with JS function) -->
+    <nav class="nav-container">
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">
+            <img src="../images/logo/logo-color.png" alt="Noble Living Company Logo" width="150" height="150">
+        </div>
+        </div>
+        <div id="shopping-cart">
+            <img src="../images/svg/shopping-bag-icon.svg" viewBox alt="shopping bag icon" width="36" height="36">
+        </div>
+        <ul class="navbar-links">
+            <li>
+                <a href="../index.html" class="nav-items">Home</a>
+            </li>
+            <li>
+                <a href="../store/store.html" class="nav-items">Store</a>
+            </li>
+            <li>
+                <a href="../blog/blog.html" class="nav-items">Blog</a>
+            </li>
+            <button id="nav-cta" class="cta">Shop Now</button>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
     <!-- End Navbar Section -->
 
 
     <!-- Store Section -->
-    <header class="container content" id="header-store">
+    <header class="container" id="store-header">
         <h1>Noble Living Store</h1>
         <hr>
         <h3>Shop Our All Natural Products</h3>
     </header>
-
-    <!-- Store Product Cards -->
-
-
-
-
+    <!-- Moisturizer -->
+    <section class="container product-list">
+        <div class="product-card">
+            <div class="product-img-cont">
+                <img class="product-img" src="../images/products/Moisturizer-1-square.jpg"
+                    alt="All natural moisturizer in a glass jar" width="360" height="360">
+            </div>
+            <div class="product-text-container">
+                <h3 class="product-card-title">All Natural Moisturizer</h3>
+                <p class="product-card-text">$20.00</p>
+                <button class="store-btn">Add To Cart</button>
+            </div>
+        </div>
+        <!-- Witch Hazel -->
+        <div class="product-card">
+            <div class="product-img-cont">
+                <img class="product-img" src="../images/products/witch-hazel-square.jpg"
+                    alt="Clear rose scented witch hazel facial toner in a squeeze bottle" width="360" height="360">
+            </div>
+            <div class="product-text-container">
+                <h3 class="product-card-title">Rose Witch Hazel Facial Toner</h3>
+                <p class="product-card-text">$14.99</p>
+                <button class="store-btn">Add To Cart</button>
+            </div>
+        </div>
+        <!-- Honey -->
+        <div class="product-card">
+            <div class="product-img-cont">
+                <img class="product-img" src="../images/products/honey-square.jpg"
+                    alt="Raw facial cleansing honey in a clear jar" width="360" height="360">
+            </div>
+            <div class="product-text-container">
+                <h3 class="product-card-title">Facial Cleansing Honey</h3>
+                <p class="product-card-text">$12.99</p>
+                <button class="store-btn">Add To Cart</button>
+            </div>
+        </div>
+        <!-- Bundle -->
+        <div class="product-card">
+            <div class="product-img-cont">
+                <img class="product-img" src="../images/products/bundle-square.jpg"
+                    alt="Three step all natural facial care bundle" width="360" height="360">
+            </div>
+            <div class="product-text-container">
+                <h3 class="product-card-title">3 Step Facial Care Bundle</h3>
+                <p class="product-card-text">$40.00</p>
+                <button class="store-btn">Add To Cart</button>
+            </div>
+        </div>
+        <!-- Hairspray -->
+        <div class="product-card">
+            <div class="product-img-cont">
+                <img class="product-img" src="../images/products/hairspray-square.jpg"
+                    alt="All natural hairspray in a brown glass spray bottle" width="360" height="360">
+            </div>
+            <div class="product-text-container">
+                <h3 class="product-card-title">All Natural Hairspray</h3>
+                <p class="product-card-text">$15.00</p>
+                <button class="store-btn">Add To Cart</button>
+            </div>
+        </div>
+        <!-- Sample -->
+        <div class="product-card">
+            <div class="product-img-cont">
+                <img class="product-img" src="../images/products/sample-moisturizer-square.jpeg"
+                    alt="All natural moisturizer in a sample jar" width="360" height="360">
+            </div>
+            <div class="product-text-container">
+                <h3 class="product-card-title">All Natural Moisturizer (Sample)</h3>
+                <p class="product-card-text">$2.99</p>
+                <button class="store-btn">Add To Cart</button>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
 
