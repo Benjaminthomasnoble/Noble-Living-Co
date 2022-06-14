@@ -5,13 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap v4.1 -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="../styles/css/main.css">
-    <link rel="stylesheet" href="../styles/css/blog.css">
-
     <!-- Google Font_Lato Light, Dancing Script & Raleway-->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script&display=swap"
@@ -19,10 +14,36 @@
     <title>Blog | Noble Living Co</title>
 </head>
 
-<!-- Navbar -->
+<!-- Navbar (to be replaced with JS function) -->
 
 <!-- Navbar End -->
-
+<nav class="nav-container">
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo">
+        <img src="../images/logo/logo-color.png" alt="Noble Living Company Logo" width="150" height="150">
+    </div>
+    </div>
+    <div id="shopping-cart">
+        <img src="../images/svg/shopping-bag-icon.svg" viewBox alt="shopping bag icon" width="36" height="36">
+    </div>
+    <ul class="navbar-links">
+        <li>
+            <a href="../index.html" class="nav-items">Home</a>
+        </li>
+        <li>
+            <a href="../store/store.html" class="nav-items">Store</a>
+        </li>
+        <li>
+            <a href="../blog/blog.html" class="nav-items">Blog</a>
+        </li>
+        <button id="nav-cta" class="cta">Shop Now</button>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+</nav>
 <!-- Blog Card Section -->
 
 <body>
