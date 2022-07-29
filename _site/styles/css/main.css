@@ -360,13 +360,26 @@ nav .icon-burger .line {
 
 /* Header Section */
 #home-hero {
-    height: 560px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: no-repeat center/100% url("../../images/stock/women-laughing-1.jpg");
-    z-index: 0;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    /* background: no-repeat center/100% url("../../images/stock/women-laughing-1.jpg"); */
+    z-index: 1;
+}
+
+#hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
 }
 
 #header-text-box {
@@ -394,8 +407,17 @@ nav .icon-burger .line {
     height: 2px;
 }
 
+#header-label-wrapper {
+    display: flex;
+    justify-self: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 #header-label-box {
     display: flex;
+    width: 100%;
     flex-direction: row;
     z-index: 99;
 }
@@ -427,6 +449,7 @@ nav .icon-burger .line {
 #first-section {
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 #first-section p {
