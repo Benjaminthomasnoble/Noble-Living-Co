@@ -752,12 +752,13 @@ nav .icon-burger .line {
     height: 1px;
 }
 
-.product-list {
+#product-list {
     display: grid;
     font-size: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 50px;
+    margin: 0em 6em 0em 6em;
     padding: 30px;
 }
 
