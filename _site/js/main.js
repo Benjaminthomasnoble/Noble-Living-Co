@@ -7,9 +7,9 @@ window.addEventListener('scroll', function () {
 });
 
 // navbar background fade into view effect
-$(function () {
-    $(document).scroll(function () {
-        const $nav = $(".nav-container");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    });
-});
+// $(function () {
+//     $(document).scroll(function () {
+//         const $nav = $(".nav-container");
+//         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+//     });
+// });
