@@ -181,7 +181,7 @@ h4 {
 }
 
 .nav-container {
-    position: sticky;
+    position: static;
     /* background: #DFCB9B; */
     top: 0px;
     left: 0px;
