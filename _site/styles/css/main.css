@@ -737,6 +737,7 @@ nav .icon-burger .line {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 #store-header h1 {
@@ -832,6 +833,7 @@ nav .icon-burger .line {
 .store-btn:hover {
     box-shadow: 0px 3px 3px #b2bec3;
 }
+
 
 
 /* Breakpoints */
