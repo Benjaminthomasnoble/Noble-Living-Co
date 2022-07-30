@@ -183,7 +183,6 @@ h4 {
 .nav-container {
     position: sticky;
     /* background: #DFCB9B; */
-
     top: 0px;
     left: 0px;
     right: 0px;
@@ -193,6 +192,11 @@ h4 {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+#navbar.scrolled {
+    background: white;
+    transition: background 500ms;
 }
 
 .nav-container>img:first-of-type {
