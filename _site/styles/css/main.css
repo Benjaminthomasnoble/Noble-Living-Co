@@ -666,6 +666,7 @@ nav .icon-burger .line {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 #blog-header h1 {
