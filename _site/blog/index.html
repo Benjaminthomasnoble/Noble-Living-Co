@@ -12,39 +12,42 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <title>Home | Noble Living Co</title>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="nav-container">
-        <input id="nav-toggle" type="checkbox">
-        <div class="logo">
-            <img src="../images/logo/logo-color.png" alt="Noble Living Company Logo" width="150" height="150">
-        </div>
-        </div>
-        <div id="shopping-cart">
-            <img src="../images/svg/shopping-bag-icon.svg" viewBox alt="shopping bag icon" width="36" height="36">
-        </div>
-        <ul class="navbar-links">
-            <li>
-                <a href="../index.html" class="nav-items">Home</a>
-            </li>
-            <li>
-                <a href="../store/index.html" class="nav-items">Store</a>
-            </li>
-            <li>
-                <a href="../blog/index.html" class="nav-items">Blog</a>
-            </li>
-            <a href="../store/index.html">
-                <button id="nav-cta" class="cta">Shop Now</button>
-            </a>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
+<nav class="nav-container" id="navbar">
+	<input id="nav-toggle" type="checkbox">
+	<div class="logo">
+		<a href="../index.html">
+			<img src="../images/logo/logo-color.png" alt="Noble Living Company Logo" width="150" height="150">
+		</a>
+	</div>
+	</div>
+	<div id="shopping-cart">
+		<img src="../images/svg/shopping-bag-icon.svg" viewBox alt="shopping bag icon" width="36" height="36">
+	</div>
+	<ul class="navbar-links">
+		<li>
+			<a href="../index.html" class="nav-items">Home</a>
+		</li>
+		<li>
+			<a href="../store/index.html" class="nav-items">Store</a>
+		</li>
+		<li>
+			<a href="../blog/index.html" class="nav-items">Blog</a>
+		</li>
+		<a href="../store/index.html">
+			<button id="nav-cta" class="cta">Shop Now</button>
+		</a>
+	</ul>
+	<label for="nav-toggle" class="icon-burger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</label>
+</nav>
 
     <!-- Page Title -->
     <header class="container content" id="blog-header">
@@ -110,7 +113,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="footer-container">
         <div class="footer">
             <div class="footer-heading footer-1">
