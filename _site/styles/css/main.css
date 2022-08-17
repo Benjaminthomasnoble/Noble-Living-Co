@@ -1135,12 +1135,12 @@ nav .icon-burger .line {
         display: block;
     }
 
-    nav :checked~.navbar-links {
-        left: 0;
-    }
-
     nav .icon-burger .line {
         transition: 0.3s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+    }
+
+    nav :checked~.navbar-links {
+        left: 0;
     }
 
     nav :checked~.icon-burger .line:nth-child(1) {
