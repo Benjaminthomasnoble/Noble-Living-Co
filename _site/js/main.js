@@ -26,7 +26,7 @@
 
 
 
-// WP API
+// WP API using Axios
 const wpEndPoint = 'http://wdb.waj.mybluehost.me/wp-json'; //this is currently a dummy site to be replaced by noblelivingco.com
 const wpAPI = {
     settings: `${wpEndPoint}/wp/v2/settings`,
