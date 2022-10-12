@@ -71,6 +71,12 @@ const output = document.querySelector('.output');
 
 
 
+window.addEventListener('load', function () {
+    init();
+})
+
+
+
 
 
 // Home Hero Img Parallax
