@@ -1,4 +1,4 @@
-/* Color Pallete */
+Color Pallete
 /* main: #F7F2EB */
 /* secondary: #FE6161 */
 
@@ -729,6 +729,38 @@ nav .icon-burger .line {
 
 .blog-btn:hover {
     box-shadow: 0px 3px 3px #b2bec3;
+}
+
+/* WP API Styles */
+.title {
+    font-size: 1.2em;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+    background-color: beige;
+    margin: 10px auto;
+}
+
+.icons {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 30px 5px;
+    border-radius: 15px;
+    width: 30px;
+}
+
+.icons:hover {
+    border: 1px solid red;
+}
+
+.details {
+    font-size: 0.8em;
+}
+
+.active {
+    background-color: red;
+    color: white;
 }
 
 /* Store */

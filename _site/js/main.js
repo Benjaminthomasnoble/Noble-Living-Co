@@ -89,14 +89,12 @@ const loadPage = function (pg) {
     let totalPages = Math.ceil(posts.results.length / posts.postPerPage);
     let endPost = startPost + posts.postPerPage > posts.results.length ?
         posts.results.length : startPost + posts.postPerPage;
-    console.log(totalPages);
-    console.log(startPost);
-
+    output.innerHTML = `<h1>Page ${posts.currentPage}</h1>`;
     let pageOutput = document.createElement('div');
     for (let x = 0; x < totalPages; x++) {
         let span = document.createElement('span');
         span.textContent = (x + 1);
-        span.classList.add('pages');
+        span.classList.add('icons');
         span.addEventListener('click', function () {
             loadPage(x + 1);
         })
@@ -105,36 +103,29 @@ const loadPage = function (pg) {
         }
         pageOutput.appendChild(span);
     }
-
     for (let x = startPost; x < endPost; x++) {
         let div = document.createElement('div');
-        div.classList.add('person');
+        div.classList.add('postTitle');
         let main = posts.results[x];
-        let person = main.name;
-        div.innerHTML = `<h3>${x} ${capMe(person.title)}. ${capMe(person.first)} ${capMe(person.last)}</h3>`;
+        let postTitle = main.title;
+        div.innerHTML = `<h3>HI</h3>`;
         let details = document.createElement('div');
         details.classList.add('details');
-        details.textContent = `Gender: ${main.gender} Email: ${main.mail} Phone: ${main.phone}`;
+        details.textContent = ``;
         div.appendChild(details);
         let img = document.createElement('img');
         img.src = main.picture.thumbnail;
         div.appendChild(img);
         output.appendChild(div);
     }
-
     pagination.appendChild(pageOutput);
-
 }
-
 const capMe = function (str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
-
-
 window.addEventListener('load', function () {
     init();
 })
-
 
 
 
