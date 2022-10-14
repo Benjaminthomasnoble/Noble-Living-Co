@@ -107,8 +107,8 @@ const loadPage = function (pg) {
         let div = document.createElement('div');
         div.classList.add('postTitle');
         let main = posts.results[x];
-        let postTitle = main.title;
-        div.innerHTML = `<h3>HI</h3>`;
+        let postTitle = main.title.rendered;
+        div.innerHTML = `<h3>main.title.rendered</h3>`;
         let details = document.createElement('div');
         details.classList.add('details');
         details.textContent = ``;
