@@ -1,6 +1,12 @@
 ---
 title: Blog
-
+pagination:
+    data: posts
+    size: 5
+    alias: post
+    permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+    paginationPrevText: 'Newer posts'
+    paginationNextText: 'Older posts'
 ---
 {% include "./_includes/_head.html" %}
 
@@ -32,12 +38,23 @@ title: Blog
         </section>
     {%- endfor -%}
 
-
-<ol>
-   {%- for posts in pagination.pages %}
-    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
-{%- endfor %}
-</ol>
-
+    {% if pagination.href.next or pagination.href.previous %}
+  <footer class="[ pagination ] [ dot-shadow panel ] [ bg-light-glare font-sans weight-bold ]">
+    <div class="wrapper">
+      <nav class="pagination__inner" aria-label="Pagination links">
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
+            <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+          </a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
+            <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+          </a>
+        {% endif %}
+      </nav>
+    </div>
+  </footer>
+{% endif %}
 
      {% include "./_includes/_footer.html" %}
