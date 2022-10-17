@@ -1,2 +1,12 @@
 node_modules
 .DS_Store
+Thumbs.db
+.sass-cache
+.env
+.cache
+*.scssc
+*.swp
+npm-debug.*
+dist
+src/_includes/css
+.eleventy.js
