@@ -1,5 +1,6 @@
 ---
 title: Blog
+
 ---
 {% include "./_includes/_head.html" %}
 
@@ -18,17 +19,25 @@ title: Blog
             <div class="blog-card-container">
                 <div class="blog-img-cont">
                     <img class="blog-img" src={{post.img.rendered }}
-                        alt="Woman writing in a journal with a pen" width="452" height="340">
+                        alt="" width="452" height="340">
                 </div>
                 <div class="section-text-cont">
                     <div class="section-text">
                         <h4 class="section-subtitle-left">{{ post.title.rendered }}</h4>
                         <p class="p-text">{{ post.excerpt.rendered }}</p>
-                        <button type="button" class="blog-btn">Read More</button>
+                        <button type="button" href="./blog/{{ post.title.rendered | slug}}.html" class="blog-btn">Read More</button>
                     </div>
                 </div>
             </div>
         </section>
     {%- endfor -%}
+
+
+<ol>
+   {%- for posts in pagination.pages %}
+    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
+{%- endfor %}
+</ol>
+
 
      {% include "./_includes/_footer.html" %}

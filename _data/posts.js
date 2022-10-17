@@ -4,6 +4,7 @@ const wpEndPoint = 'http://wdb.waj.mybluehost.me/wp-json';
 
 module.exports = () =>
     EleventyFetch(`${wpEndPoint}/wp/v2/posts?per_page=100`, {
+        category: "Posts",
         duration: "1m",
         type: "json"
     });
