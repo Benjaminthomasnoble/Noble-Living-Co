@@ -1,0 +1,34 @@
+---
+title: Blog
+---
+{% include "./_includes/_head.html" %}
+
+<body>
+    {% include "./_includes/_navbar.html" %}
+
+    <!-- Page Title -->
+    <header class="container content" id="blog-header">
+        <h1>Noble Living Blog</h1>
+        <hr>
+        <h3>Articles for Women Like YOU</h3>
+    </header>
+
+    {%- for post in posts -%}
+    <section class="container">
+            <div class="blog-card-container">
+                <div class="blog-img-cont">
+                    <img class="blog-img" src={{post.img.rendered }}
+                        alt="Woman writing in a journal with a pen" width="452" height="340">
+                </div>
+                <div class="section-text-cont">
+                    <div class="section-text">
+                        <h4 class="section-subtitle-left">{{ post.title.rendered }}</h4>
+                        <p class="p-text">{{ post.excerpt.rendered }}</p>
+                        <button type="button" class="blog-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {%- endfor -%}
+
+     {% include "./_includes/_footer.html" %}
