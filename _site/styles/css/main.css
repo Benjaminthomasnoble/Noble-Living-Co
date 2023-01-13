@@ -122,6 +122,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .section-text {
@@ -686,7 +687,7 @@ nav .icon-burger .line {
 
 .blog-card-container {
     max-width: 950px;
-    max-height: 350px;
+    max-height: 450px;
     background-clip: border-box;
     background-color: white;
     word-wrap: break-word;
@@ -694,6 +695,8 @@ nav .icon-burger .line {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding-left: 20px;
 }
 
 .blog-img-cont {
